@@ -1,7 +1,7 @@
 var deger = document.getElementById("girdi");
 
 
-
+var kalanHak = 8;
 var randomSayi;
 var oyunBaslamaDegeri = 1;
 var i;
@@ -49,7 +49,7 @@ function sonucDegerlendir(){
         window.location.reload();
         deger.value = "";
     }
-    else if(oyunBitirmeDegeri == 8){
+    else if(oyunBitirmeDegeri == 7){
         alert("Oyunu Kazanamadiniz");
         window.location.reload();
         deger.value = "";
@@ -68,6 +68,7 @@ function sonucDegerlendir(){
     if(randomSayi-deger.value < 10 && deger.value < randomSayi){
         soguk();
     }
+    kalanHakk();
     
 }
 
@@ -81,4 +82,10 @@ function oyunBasla(){
     yakinlikDegerlendirme ();
     
 
+}
+
+function kalanHakk(){
+    kalanHak -=1;
+    document.getElementById('kalanHak').innerHTML = "Kalan Hakkınız : " + kalanHak;
+ 
 }
