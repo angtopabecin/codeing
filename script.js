@@ -50,7 +50,7 @@ function sonucDegerlendir(){
         deger.value = "";
     }
     else if(oyunBitirmeDegeri == 7){
-        alert("Oyunu Kazanamadiniz");
+        alert("Oyunu Kazanamadiniz "+" Mal Bunu Bulcaktın : " + randomSayi);
         window.location.reload();
         deger.value = "";
     }
