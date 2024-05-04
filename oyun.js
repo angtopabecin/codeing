@@ -47,12 +47,14 @@ setInterval(game ,1000/kare);
 
 
 const hareket = () => {
-    karakter.x = 50;
+    hareketArt();
  
 }
 
 
-
+function hareketArt(){
+    karakter.x = +2 + karakter.x;
+}
 
 
 
